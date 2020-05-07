@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+        <title>Box Model</title>
+        <style>
+            body,html{
+                padding: 0;
+                margin: 0;
+                background-color: green; 
+                height: 100%;         
+            }
+            .box{
+                background-color: yellow;
+                width: 50%;
+                height: 50%;
+                padding-top: 10%;
+                padding-left:10%;
+            }
+            .inside-box{
+                background-color: red;                
+                width: 50%;
+                height: 50%;
+                border-width: 5px;
+                border-color: blueviolet;
+                border:5px dashed black;
+            }
+            p1{
+                color: rgb(110, 22, 22);
+            }
+            p2{
+                color: rgb(115, 255, 0) ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <!-- div>.box -->
+            <p1>box</p1>
+            <div class="inside-box">
+                <p2>inside-box</p2>
+            </div>
+        </div>    
+    </body>
+</html>
